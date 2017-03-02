@@ -1,0 +1,169 @@
+    1  yum -y install git vim curl
+    2  ihconfig
+    3  vim /etc/nameserver
+    4  -l
+    5  quit
+    6  exit
+    7  yum update
+    8  yum install postgresql-server postgresql-contrib
+    9  ls
+   10  exit
+   11  yum -y nmap
+   12  yum -y install nmap
+   13  nmap localhost
+   14  ps aux | grep postgres
+   15  git clone https://github.com/razeone/data-graduates.git
+   16  ps aux | grep postgres
+   17  postgresql-setup initdb
+   18  ps aux | grep postgres
+   19  systemctl start postgresql
+   20  ps aux | grep postgres
+   21  psql
+   22  su psql
+   23  su postgres
+   24  exit
+   25  vi /var/lib/pgsql/data/pg_hba.conf
+   26  vi /var/lib/pgsql/data/postgresql.conf
+   27  createdb beeva
+   28  ps aux | grep postgres
+   29  -p 5432
+   30  exit
+   31  su postgres
+   32  cd /var/lib/pgsql/data
+   33  su postgres
+   34  systemctl postgresql restart
+   35  systemctl restart postgresql
+   36  su postgres
+   37  psql -W beeva -U raze
+   38  su postgres
+   39  vi /var/lib/pgsql/data/pg_hba.conf
+   40  systemctl restart postgresql
+   41  su postgres
+   42  vi /var/lib/pgsql/data/pg_hba.conf
+   43  su postgres
+   44  systemctl restart postgresql
+   45  su postgres
+   46  exit
+   47  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+   48  cd /graduate
+   49  cd graduate
+   50  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+   51  cd beeva-data-storage
+   52  vim README.md
+   53  cat README.md
+   54  ls
+   55  git status
+   56  git add README.md
+   57  git status
+   58  git commit -m "This is my first commit, adding readme"
+   59  git config --global user.email "laloglezvaz@gmail.com"
+   60  git config --global user.name "Edu-Glez"
+   61  git commit -m "This is my first commit, adding readme"
+   62  git push
+   63  git push origin master
+   64  mkdir data
+   65  cd data
+   66  vim file.csv
+   67  cd..
+   68  cd ..
+   69  git status
+   70  git add --all
+   71  git status
+   72  git chekout -b develop
+   73  git checkout -b develop
+   74  git branch
+   75  git add data/
+   76  ls
+   77  git status
+   78  git commit -m "Adding data directory and file.csv"
+   79  git push origin develop
+   80  cd data
+   81  vim file2.csv
+   82  git status
+   83  git add --all
+   84  git commit -m "Missing file"
+   85  push origin develop
+   86  git push origin develop
+   87  git branch
+   88  git fetch
+   89  cd..
+   90  cd ..
+   91  vim codebook.md
+   92  cd data
+   93  mv file.csv users.csv
+   94  mv file2.csv pesos.csv
+   95  cd ..
+   96  vim codebook.md
+   97  git status
+   98  git add --all
+   99  git commit -m "Change file names and add codebook"
+  100  git push origin develop
+  101  ip addr
+  102  yum groupinstall -y development
+  103  yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+  104  yum -y install python36u
+  105  python3.6 --version
+  106  which python3.6
+  107  vim .gitignore
+  108  ls
+  109  git add .gitignore
+  110  git commit -m "Add .gitignore"
+  111  git status
+  112  git push origin develop
+  113  virtualenv -p python3.5 env
+  114  virtualenv -p python3.6 env
+  115  yum search virtualenv
+  116  yum -y install python-virtualenv
+  117  virtualenv -p python3.6 env
+  118  which python3.6
+  119  virtualenv -p /usr/bin/python3.6 env
+  120  ls -a
+  121  git clone https://github.com/razeone/data-graduates.git
+  122  python3.6 --version
+  123  rm -RF data-graduates
+  124  rm --help
+  125  rm -R data-graduates
+  126  rm -Rf data-graduates
+  127  ls
+  128  ls -a
+  129  cd ..
+  130  git clone https://github.com/razeone/data-graduates.git
+  131  rm -Rf data-graduates
+  132* git clone https://github.com/razeone/data-graduates.git
+  133  date
+  134  who
+  135  pwd
+  136  ls -R
+  137  ps -ef
+  138  expr 5 % 4
+  139  expr 1300%700
+  140  expr 1300 % 700
+  141  expr 1300 % 700 / 80
+  142  expr 1300 % 700 / 80 * 90 -10 + 9
+  143  expr 1300 % 700 / 80 * 90 - 10 + 9
+  144  expr 1300 % 700 / 80
+  145  expr 1300 % 700 \/ 80 \* 2
+  146  pico filepico.txt
+  147  vi filepico.txt
+  148  for VARIABLE in file1 file2 file3; done
+  149  ls
+  150  ls -l
+  151  ls -a
+  152  ls -la
+  153  ls -t
+  154  ls -lt
+  155  ls -latR
+  156  ls -tr
+  157  ls -trl
+  158  ls -tl
+  159  yum install htop
+  160  htop
+  161  ps ax
+  162  pwd
+  163  man fg
+  164  man mount
+  165  popopopopopopopopo
+  166  history
+  167  history > classbeeva.txt
+  168  cd beeva-data-storage
+  169  history > classbeeva.txt
