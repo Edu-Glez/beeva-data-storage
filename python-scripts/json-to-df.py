@@ -9,8 +9,7 @@ dfp=pd.DataFrame(data)
 dfaux=dfp
 
 for i in range(0, len(data)):
-	#dfp['name'][i]=dfaux['name'][i]['common']
-	dfp['name'][i]=dfaux.loc[:,('name',i)]
+	dfp['name'][i]=dfaux['name'][i]['common']
 dfcsv=pd.read_csv('/home/graduate/data-graduates/Introduction_01/data/countries.csv')
 
 merged=pd.merge(dfp,dfcsv,on='name')
