@@ -1,0 +1,556 @@
+    1  yum -y install git vim curl
+    2  ihconfig
+    3  vim /etc/nameserver
+    4  -l
+    5  quit
+    6  exit
+    7  yum update
+    8  yum install postgresql-server postgresql-contrib
+    9  ls
+   10  exit
+   11  yum -y nmap
+   12  yum -y install nmap
+   13  nmap localhost
+   14  ps aux | grep postgres
+   15  git clone https://github.com/razeone/data-graduates.git
+   16  ps aux | grep postgres
+   17  postgresql-setup initdb
+   18  ps aux | grep postgres
+   19  systemctl start postgresql
+   20  ps aux | grep postgres
+   21  psql
+   22  su psql
+   23  su postgres
+   24  exit
+   25  vi /var/lib/pgsql/data/pg_hba.conf
+   26  vi /var/lib/pgsql/data/postgresql.conf
+   27  createdb beeva
+   28  ps aux | grep postgres
+   29  -p 5432
+   30  exit
+   31  su postgres
+   32  cd /var/lib/pgsql/data
+   33  su postgres
+   34  systemctl postgresql restart
+   35  systemctl restart postgresql
+   36  su postgres
+   37  psql -W beeva -U raze
+   38  su postgres
+   39  vi /var/lib/pgsql/data/pg_hba.conf
+   40  systemctl restart postgresql
+   41  su postgres
+   42  vi /var/lib/pgsql/data/pg_hba.conf
+   43  su postgres
+   44  systemctl restart postgresql
+   45  su postgres
+   46  exit
+   47  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+   48  cd /graduate
+   49  cd graduate
+   50  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+   51  cd beeva-data-storage
+   52  vim README.md
+   53  cat README.md
+   54  ls
+   55  git status
+   56  git add README.md
+   57  git status
+   58  git commit -m "This is my first commit, adding readme"
+   59  git config --global user.email "laloglezvaz@gmail.com"
+   60  git config --global user.name "Edu-Glez"
+   61  git commit -m "This is my first commit, adding readme"
+   62  git push
+   63  git push origin master
+   64  mkdir data
+   65  cd data
+   66  vim file.csv
+   67  cd..
+   68  cd ..
+   69  git status
+   70  git add --all
+   71  git status
+   72  git chekout -b develop
+   73  git checkout -b develop
+   74  git branch
+   75  git add data/
+   76  ls
+   77  git status
+   78  git commit -m "Adding data directory and file.csv"
+   79  git push origin develop
+   80  cd data
+   81  vim file2.csv
+   82  git status
+   83  git add --all
+   84  git commit -m "Missing file"
+   85  push origin develop
+   86  git push origin develop
+   87  git branch
+   88  git fetch
+   89  cd..
+   90  cd ..
+   91  vim codebook.md
+   92  cd data
+   93  mv file.csv users.csv
+   94  mv file2.csv pesos.csv
+   95  cd ..
+   96  vim codebook.md
+   97  git status
+   98  git add --all
+   99  git commit -m "Change file names and add codebook"
+  100  git push origin develop
+  101  ip addr
+  102  yum groupinstall -y development
+  103  yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+  104  yum -y install python36u
+  105  python3.6 --version
+  106  which python3.6
+  107  vim .gitignore
+  108  ls
+  109  git add .gitignore
+  110  git commit -m "Add .gitignore"
+  111  git status
+  112  git push origin develop
+  113  virtualenv -p python3.5 env
+  114  virtualenv -p python3.6 env
+  115  yum search virtualenv
+  116  yum -y install python-virtualenv
+  117  virtualenv -p python3.6 env
+  118  which python3.6
+  119  virtualenv -p /usr/bin/python3.6 env
+  120  ls -a
+  121  git clone https://github.com/razeone/data-graduates.git
+  122  python3.6 --version
+  123  rm -RF data-graduates
+  124  rm --help
+  125  rm -R data-graduates
+  126  rm -Rf data-graduates
+  127  ls
+  128  ls -a
+  129  cd ..
+  130  git clone https://github.com/razeone/data-graduates.git
+  131  rm -Rf data-graduates
+  132  git clone https://github.com/razeone/data-graduates.git
+  133  date
+  134  who
+  135  pwd
+  136  ls -R
+  137  ps -ef
+  138  expr 5 % 4
+  139  expr 1300%700
+  140  expr 1300 % 700
+  141  expr 1300 % 700 / 80
+  142  expr 1300 % 700 / 80 * 90 -10 + 9
+  143  expr 1300 % 700 / 80 * 90 - 10 + 9
+  144  expr 1300 % 700 / 80
+  145  expr 1300 % 700 \/ 80 \* 2
+  146  pico filepico.txt
+  147  vi filepico.txt
+  148  for VARIABLE in file1 file2 file3; done
+  149  ls
+  150  ls -l
+  151  ls -a
+  152  ls -la
+  153  ls -t
+  154  ls -lt
+  155  ls -latR
+  156  ls -tr
+  157  ls -trl
+  158  ls -tl
+  159  yum install htop
+  160  htop
+  161  ps ax
+  162  pwd
+  163  man fg
+  164  man mount
+  165  popopopopopopopopo
+  166  history
+  167  history > classbeeva.txt
+  168  cd beeva-data-storage
+  169  history > classbeeva.txt
+  170  git add classbeeva.txt
+  171  git status
+  172  git commit -m "Adding class 2 commands"
+  173  git branch
+  174  git push origin develop
+  175  shutdown -h now
+  176  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+  177  cd /graduate
+  178  cd graduate
+  179  git clone https://github.com/Edu-Glez/beeva-data-storage.git
+  180  cd beeva-data-storage
+  181  vim README.md
+  182  cat README.md
+  183  ls
+  184  git status
+  185  git add README.md
+  186  git status
+  187  git commit -m "This is my first commit, adding readme"
+  188  git config --global user.email "laloglezvaz@gmail.com"
+  189  git config --global user.name "Edu-Glez"
+  190  git commit -m "This is my first commit, adding readme"
+  191  git push
+  192  git push origin master
+  193  mkdir data
+  194  cd data
+  195  vim file.csv
+  196  cd..
+  197  cd ..
+  198  git status
+  199  git add --all
+  200  git status
+  201  git chekout -b develop
+  202  git checkout -b develop
+  203  git branch
+  204  git add data/
+  205  ls
+  206  git status
+  207  git commit -m "Adding data directory and file.csv"
+  208  git push origin develop
+  209  cd data
+  210  vim file2.csv
+  211  git status
+  212  git add --all
+  213  git commit -m "Missing file"
+  214  push origin develop
+  215  git push origin develop
+  216  git branch
+  217  git fetch
+  218  cd..
+  219  cd ..
+  220  vim codebook.md
+  221  cd data
+  222  mv file.csv users.csv
+  223  mv file2.csv pesos.csv
+  224  cd ..
+  225  vim codebook.md
+  226  git status
+  227  git add --all
+  228  git commit -m "Change file names and add codebook"
+  229  git push origin develop
+  230  ip addr
+  231  yum groupinstall -y development
+  232  yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+  233  yum -y install python36u
+  234  python3.6 --version
+  235  which python3.6
+  236  vim .gitignore
+  237  ls
+  238  git add .gitignore
+  239  git commit -m "Add .gitignore"
+  240  git status
+  241  git push origin develop
+  242  virtualenv -p python3.5 env
+  243  virtualenv -p python3.6 env
+  244  yum search virtualenv
+  245  yum -y install python-virtualenv
+  246  virtualenv -p python3.6 env
+  247  which python3.6
+  248  virtualenv -p /usr/bin/python3.6 env
+  249  ls -a
+  250  git clone https://github.com/razeone/data-graduates.git
+  251  python3.6 --version
+  252  rm -RF data-graduates
+  253  rm --help
+  254  rm -R data-graduates
+  255  rm -Rf data-graduates
+  256  ls
+  257  ls -a
+  258  cd ..
+  259  git clone https://github.com/razeone/data-graduates.git
+  260  rm -Rf data-graduates
+  261  git clone https://github.com/razeone/data-graduates.git
+  262  date
+  263  who
+  264  pwd
+  265  ls -R
+  266  ps -ef
+  267  expr 5 % 4
+  268  expr 1300%700
+  269  expr 1300 % 700
+  270  expr 1300 % 700 / 80
+  271  expr 1300 % 700 / 80 * 90 -10 + 9
+  272  expr 1300 % 700 / 80 * 90 - 10 + 9
+  273  expr 1300 % 700 / 80
+  274  expr 1300 % 700 \/ 80 \* 2
+  275  pico filepico.txt
+  276  vi filepico.txt
+  277  for VARIABLE in file1 file2 file3; done
+  278  ls
+  279  ls -l
+  280  ls -a
+  281  ls -la
+  282  ls -t
+  283  ls -lt
+  284  ls -latR
+  285  ls -tr
+  286  ls -trl
+  287  ls -tl
+  288  yum install htop
+  289  htop
+  290  ps ax
+  291  pwd
+  292  man fg
+  293  man mount
+  294  popopopopopopopopo
+  295  history
+  296  history > classbeeva.txt
+  297  cd beeva-data-storage
+  298  history > classbeeva.txt
+  299  git add classbeeva.txt
+  300  git status
+  301  git commit -m "Adding class 2 commands"
+  302  git branch
+  303  git push origin develop
+  304  shutdown -h now
+  305  cd beeva-data-storage
+  306  grep virtual
+  307  virtualenv -p /usr/bin/python3.6 env
+  308  virtualenv env
+  309  source env/bin/activate
+  310  pip install pandas request lxml
+  311  rm -Rf env/
+  312  yum install python34 python-pip
+  313  pip install -U pip
+  314  exit
+  315  source env/bin/activate
+  316  cd python-scripts
+  317  python read-json.py
+  318  dhclient p4p2
+  319  python read-json.py
+  320  ping google.com
+  321  python read-json.py
+  322  python
+  323  ps aux | grep postgres
+  324  systemctl
+  325  ps aux | grep postgres
+  326  history
+  327  deactivate
+  328  ps aux | grep postgres
+  329  history
+  330  systemctl start postgres
+  331  systemctl start postgresql
+  332  ps aux | grep postgres
+  333  psql
+  334  su psql
+  335  exit
+  336  su psql
+  337  su postgres
+  338  source env/bin/activate
+  339  cd ..
+  340  pip install psycopg2
+  341  source env/bin/activate
+  342  pip install psycopg2
+  343  su postgres
+  344  cd beeva-data-storage
+  345  su postgres
+  346  source env/bin/activate
+  347  psql
+  348  systemctl start postgresql
+  349  psql
+  350  su postgres
+  351  cd ..
+  352  su postgres
+  353  cd ..
+  354  su postgres
+  355  dhclient p2p4
+  356  dhclient p4p2
+  357  su postgres
+  358  ls
+  359  ls -a
+  360  cd beeva-data-storage
+  361  pip freeze
+  362  ls
+  363  ls -a
+  364  ls -l
+  365  ls
+  366  ls -a
+  367  cd ..
+  368  ls
+  369  cd /home/graduate
+  370  ls
+  371  cd beeva-data-storage
+  372  cd python-scripts
+  373  vim postgres-python.py
+  374  cd
+  375  cd ..
+  376  cd home
+  377  cd graduate
+  378  cd beeva-data-storage
+  379  python
+  380  cd python-scripts
+  381  vim postgres-python.py
+  382  python postgres-python.py
+  383  psql
+  384  su postgres
+  385  vim postgres-python.py
+  386  python postgres-python.py
+  387  su postgres
+  388  python postgres-python.py
+  389  vim postgres-python.py
+  390  su postgres
+  391  vim postgres-python.py
+  392  su postgres
+  393  vim postgres-python.py
+  394  su postgres
+  395  cd home
+  396  cd /home
+  397  ls
+  398  cd graduate
+  399  ls
+  400  su postgres
+  401  cd home
+  402  cd /home
+  403  su postgres
+  404  ps aux | grep postgres
+  405  cd /graduate/beeva-data-storage
+  406  cd /graduate
+  407  cd graduate
+  408  cd beeva-data-storage
+  409  telnet 127.0.0.1 5432
+  410  cd home
+  411  cd /home
+  412  su postgres
+  413  ps aux | grep postgres
+  414  systemctl restart postgresql
+  415  systemctl status postgresql
+  416  ps aux | grep postgres
+  417  cd /var/lib/pgsql/data
+  418  ls
+  419  vim pg_hba.conf
+  420  cd graduate
+  421  cd home
+  422  cd /home
+  423  cd graduate
+  424  cd beeva-data-storage
+  425  cd python-scripts
+  426  python postgres-python.py
+  427  su postgres
+  428  cd /var/lib/pgsql/data
+  429  vim postgresql.conf
+  430  cd /home/graduate/beeva-data-storage/python-scripts
+  431  python postgres-python.py
+  432  su postgres
+  433  vim postgres-python.py
+  434  python postgres-python.py
+  435  su postgres
+  436  systemctl restart postgresql
+  437  python postgres-python.py
+  438  python
+  439  vim postgres-python.py
+  440  python
+  441  cd ..
+  442  cd data
+  443  cd ..
+  444  history
+  445  git clone https://github.com/razeone/data-graduates.git
+  446  rm -Rf data-graduates
+  447  git clone https://github.com/razeone/data-graduates.git
+  448  ls
+  449  cd data-graduates
+  450  pwd
+  451  cd ..
+  452  cd beeva-data-storage
+  453  python
+  454  uname
+  455  man
+  456  man man
+  457  uname --help
+  458  uname --m
+  459  uname --all
+  460  man netcat
+  461  netcat --help
+  462  ls -l
+  463  man chmod
+  464  ~
+  465  cd ..
+  466   mkdir /opt/test
+  467  sudo ls -al /opt/
+  468  man chown
+  469  visudo
+  470  sudo ls
+  471  exit
+  472  vim json-to-df.py
+  473  cd ..
+  474  history
+  475  git add --all
+  476  git status
+  477  git commit -m "Adding some scripts"
+  478  git branch
+  479  git push origin develop
+  480  git status
+  481  cd python-scripts.py
+  482  cd python-scripts
+  483  vim json-to-df.py
+  484  su postgres
+  485  dhclient p4p2
+  486  cd /home/graduate/Descargas
+  487  cp /home/graduate/Descargas/json-to-df.py /home/graduate/beeva-data-storage/python-scripts/json-to-df.py
+  488  cd /home/graduate/beeva-data-storage/python-scripts
+  489  vim json-to-df.py
+  490  history
+  491   source env/bin/activate
+  492  source env/bin/activate
+  493  cd ..
+  494  source env/bin/activate
+  495  cd python-scripts
+  496  python json-to-df.py
+  497  vim json-to-df.py
+  498  vim -r json-to-df.py
+  499  vim json-to-df.py
+  500  python json-to-df.py
+  501  python
+  502  vim json-to-df.py
+  503  python
+  504  python json-to-df.py
+  505  python
+  506  python json-to-df.py
+  507  python
+  508  python json-to-df.py
+  509  python
+  510  git branch
+  511  cd ..
+  512  git add --all
+  513  git status
+  514  git commit -m "adding script for merge"
+  515  git push origin develop
+  516  cd python-scripts
+  517  vim movies.py
+  518  python movies.py
+  519  vim movies.py
+  520  python movies.py
+  521  cd ..
+  522  cd data
+  523  ls
+  524  vim movies.py
+  525  cd ..
+  526  cd python-scripts
+  527  vim movies.py
+  528  python movies.py
+  529  cd ..
+  530  cd data
+  531  rm moviesmovies.zip
+  532  ls
+  533  cd movies
+  534  ls
+  535  cd ..
+  536  cd python-scripts
+  537  vim movies.py
+  538  python movies.py
+  539  vim movies.py
+  540  python movies.py
+  541  vim movies.py
+  542  python movies.py
+  543  vim movies.py
+  544  python movies.py
+  545  vim movies.py
+  546  python movies.py
+  547  vim movies.py
+  548  python movies.py
+  549  git status
+  550  cd ..
+  551  git status
+  552  git add --all
+  553  git status
+  554  git commit -m "Adding files for movie analysis"
+  555  git push origin develop
+  556  history > history07-03-17.txt
