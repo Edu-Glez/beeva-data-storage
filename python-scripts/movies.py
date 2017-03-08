@@ -39,48 +39,62 @@ else:
 	#Is important to use .close()
 	zip_ref.close()
 
-#I want to know the names of the extracted files 
-print(file_names)
 
-movie_names=['movie_id','title','genres']
-rating_names=['user_id','movie_id','rating','timestamp']
+
+#I want to know the names of the extracted files 
+#print(file_names)
+
+#movie_names=['movie_id','title','genres']
+#rating_names=['user_id','movie_id','rating','timestamp']
 
 
 #Reading the files
 movies = pd.read_csv(working_dir +
 	inner_dir + 
-	expected_files[1], sep = ',',names=movie_names)
+	expected_files[1], sep = ',')
 ratings = pd.read_csv(working_dir +
 	 inner_dir +
-	 expected_files[2], sep = ',',names=rating_names)
+	 expected_files[2], sep = ',')
 #Print the first lines
 if DEBUG:
-	print(movies.head())
-	print(ratings.head())
+	print(movies.head(1))
+	print(ratings.head(1))
 
-print("the names of our new dataframe are:")
-print(list(movies.columns.values))
-print(list(ratings.columns.values))
+#Doing the merge between movies and ratings
+rated_movies= pd.merge(movies,ratings,on='movieId')
 
-print("The dimensions are:")
-print(movies.count())
-print(ratings.count())
+#Getting the sum of the ratings of the movies and grouping by name
+top20=rated_movies['rating'].groupby(rated_movies['title']).sum()
 
-rated_movies= pd.merge(movies,ratings,on='movie_id')
-rated_movies=rated_movies.sort_values('rating',ascending=False)
+#Sorting the values and getting the top 20 of the sum
+top20=top20.sort_values(ascending=False).head(20)
 
-top20=rated_movies.head(20)
+#Getting the sum of the ratings of the movies and grouping by movieId
+#top5ids=rated_movies['rating'].groupby(rated_movies['movieId']).sum()
 
-top5_dict={}
+#Sorting the values and getting the top 5 of the sum
+#top5ids=top5ids.sort_values(ascending=False).head(5)
+top5titles=top20.head(5)
+#Getting the movieIds of the top 5 films
+index=top5titles.index.get_level_values('title')
 
-for i in range(5):
-	title= top20[i]['title']
-	for j in rated_movies:
-		if rated_movies[j]['title'] == title:
-			top5_dict[title] = rated_movies[j]
+#Initialize top5 dataframe
+top5=pd.DataFrame()
 
-print(rated_movies.head(50))
-print(list(rated_movies.columns.values))
+print('---------------------------------------------------------------------------------------------------------')
+print('Top 20 películas basado en la suma de sus ratings')
+print(top20)
+
+#Getting all the information and ratings from the top 5 films
+print('---------------------------------------------------------------------------------------------------------')
+print('Toda la información de las primeras cinco películas del Top 20')
+for i in index:
+	#Loading info into top5 dataframe
+	top5=top5.append(rated_movies.loc[rated_movies['title']==i])
+	#Printing top 5 movies info	
+	print(rated_movies.loc[rated_movies['title']==i])
+print('---------------------------------------------------------------------------------------------------------')
+#print(top5)
 
 
 
